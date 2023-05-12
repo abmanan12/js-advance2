@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Methods</title>
+
+    <script>
+
+        // EXAMPLE
+        let arr = [1, 3, 6, 7, 10]
+
+        // ForEach method
+        arr.forEach((elem) => {
+            console.log('forEach => ', elem * 3);
+        })
+
+        // Map method
+        let map = arr.map((elem) => {
+            return elem * 3
+        })
+        console.log('map => ', map);
+
+        // Filter method
+        let filter = arr.filter((elem) => {
+            return elem % 2 == 0
+        })
+        console.log('filter => ', filter);
+
+        // Find method
+        let find = arr.find((elem) => {
+            return elem % 2 == 0
+        })
+        console.log('find => ', find);
+
+        // FindIndex method
+        let findIndex = arr.findIndex((elem) => {
+            return elem % 2 == 0
+        })
+        console.log('findIndex => ', findIndex);
+
+        // Reduce method
+        let reduce = arr.reduce((accum, curElem) => {
+            accum = accum + curElem
+            return accum
+        }, 0)
+        console.log('reduce => ', reduce);
+
+        // Sort method
+        let sort = arr.sort((a, b) => {
+            return b - a
+        })
+        console.log('sort => ', sort);
+
+        // Some method
+        let some = arr.some((curElem) => {
+            return curElem > 8
+        })
+        console.log('some => ', some);
+
+        // Every method
+        let every = arr.every((curElem) => {
+            return curElem > 8
+        })
+        console.log('every => ', every);
+
+        // Includes method
+        let includes = arr.includes(7)
+        console.log('includes => ', includes);
+
+        // Array.from method
+        let of = Array.of(1, 2, 3, 4, 5)
+        console.log('of => ', of);
+
+        // Array.from method
+        let name = 'AbdulManan'
+        let from = Array.from(name)
+        console.log('from => ', from);
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div style="text-align: center; margin-top: 40px;">
+        <h2>JavaScript 12 Methods</h2>
+        <p>(Go to console to check output)</p>
+    </div>
+
+</body>
+
+</html>
